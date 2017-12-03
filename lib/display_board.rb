@@ -1,7 +1,7 @@
 # Define display_board that accepts a board and prints
 # out the current state.
 # Define a method display_board that prints a 3x3 Tic Tac Toe Board
-def display_board
+def display_board(i,x,type)
   cell = "   "
   seperator = "|"
   row_lines = "-----------"
@@ -11,6 +11,8 @@ def display_board
   row_2 = [cell + seperator + cell + seperator + cell]
   row_3 = [row_lines]
   row_4 = [cell + seperator + cell + seperator + cell]
+
+  row[i,x] = " #{type} "
 
   puts row_0
   puts row_1
